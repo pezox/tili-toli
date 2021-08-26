@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>Tili-toli játék</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="design.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans"/>
+    </head>
+    <body onload="init()">
+        <h1>Tili-toli játék</h1>
+        <table id="kepek-tabla"></table>
+        <div id="panel">
+            <input type="button" value="Alaphelyzet" id="alap-gomb" onclick="alaphelyzet()" class="gomb">
+            <input type="button" value="Összekever" id="kever-gomb" onclick="osszekever()" class="gomb">
+            <input type="button" value="Start" id="start-gomb" onclick="start()" class="gomb">
+            <input type="button" value="Kilép" id="kilep-gomb" onclick="kilep()" class="gomb">
+            <span id="jatek-infok">
+                Idő: <span id="ido"></span>
+                Lépések száma: <span id="lepesek-szama"></span>
+            </span>
+        </div>
+        <script src="tili-toli-trim.js"></script>
+    </body>
+</html>
